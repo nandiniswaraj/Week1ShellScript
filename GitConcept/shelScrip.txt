@@ -1,0 +1,62 @@
+1************what is program *********************
+
+A program is a set of instruction that computer excutes.
+A program is a set of Instruction loaded in Cpu and cpu executes to achive an outputs.
+
+2*************
+variable assignment does not space;
+
+/********* Component required to executes program********************/
+1cpu
+2 memory
+
+read input from users
+read -p "Enter a number" x
+/**************Programming constraints *******************
+ is control the flow of program execution.
+ it is 3 types:
+               1.Sequence:
+			   2.Selection
+			   3.Repetition
+			                A 
+            1.Sequence: A sequence construct tells the Cpu  which stmt is to be excuted next.
+			2.Selection: A selection stmt provides for selection between 
+			 
+			 
+			 
+			 ***if[cond] then fi
+			 ****elseif 
+			           
+					   
+					   
+**************************************************12/03/2020****************************************************************
+
+
+                                                        * 	
+														*
+														*
+														*
+														*
+														*
+														*
+valid       $     invalid   
+111        =>    invalid
+
+
+1aaa            valid 
+aa11           invalid
+bcc                valid 
+1a1aab             invalid
+1abb23a           valid
+
+
+1 valid once have 3 consucutive characters
+[a-z A-Z]{3}
+
+[a-z A-Z]{3,}three or more char
+
+[0-9 a-z A-Z]$
+^([0-9]*[a-zA-Z]){3}
+
+
+					   
