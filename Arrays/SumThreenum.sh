@@ -15,7 +15,7 @@ do
 echo -e "${array[$i]} \c"
 done
 }
-threeaddzero(){
+threeNumberSumZero(){
 for((i=0;i<n;i++))
 do
 	for((j=0;j<n;j++))
@@ -34,5 +34,5 @@ done
 fillarray
 display
 echo
-threeaddzero
+threeNumberSumZero
 
