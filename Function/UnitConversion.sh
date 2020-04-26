@@ -1,25 +1,25 @@
 #!/bin/bash -x
  tempconversion(){
-	val=$1
-	num=$2
-	case $val in
-		$CtoF)
-			if (( $num>=0 && $num<=100 ));
-			then
-				tem=$(echo "scale=3;$num*9/5+32" |bc)
-			fi
-			;;
-		$FtoC)
-			if (( $num>=32 && $num<=212 ));
-			then
-				tem=$(echo "scale=3;($num-31)*5/9" |bc)
-			fi
-			;;
-		*)
-			echo "Invalid Input"
-			;;
+val=$1
+num=$2
+case $val in
+$CtoF)
+if (( $num>=0 && $num<=100 ));
+then
+	tem=$(echo "scale=3;$num*9/5+32" |bc)
+fi
+	;;
+$FtoC)
+if (( $num>=32 && $num<=212 ));
+then
+	tem=$(echo "scale=3;($num-31)*5/9" |bc)
+fi
+	;;
+*)
+	echo "Invalid Input"
+	;;
 esac
-		echo $tem
+	echo $tem
 }
 CtoF=1;
 FtoC=2;
