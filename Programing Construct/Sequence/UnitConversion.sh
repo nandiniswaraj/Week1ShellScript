@@ -1,14 +1,14 @@
 #!/bin/bash -x
 echo "Enter the (inchs) : "
 read  inches
-echo "Enter the foot in lenth "
+echo "Enter the lenth in foot "
 read length
-echo "enter the foot in width"
+echo "enter the  width in foot"
 read width
-echo " how much no of plote "
-read n
-area=$[$length*$width];
-meterfoo=$(echo "scale=6;3.280849" |bc);
+echo " how many number of plotes "
+read plotes
+footIntoInch=$(echo "scale=6;3.280849" |bc);
+area=$[$length * $width * 2];
 meter=$(echo "scale=4;$area/$meterfoo" |bc); 
 feet=$(echo "scale=2;$inches/12" |bc);
 acre=$(echo "scale=4;$area/43560" |bc);
