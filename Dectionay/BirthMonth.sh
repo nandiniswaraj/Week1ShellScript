@@ -6,8 +6,8 @@ do
 	brthmnth=$((RANDOM%12+1));
 	brthmnths[$brthmnth]=$(( ${brthmnths[$brthmnth]}+1 ));
 done
-echo "brthmnth the  Number of People "
+        echo "brthmnth the  Number of People "
 for (( i=1; i<=12; i++ ))
 do
-    echo "   $i    =  ${brthmnths[$i]}"
+      echo "   $i    =  ${brthmnths[$i]}"
 done
