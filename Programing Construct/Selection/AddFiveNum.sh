@@ -1,36 +1,36 @@
 #!/bin/bash -x
-fir=$[RANDOM%900+100];
-sec=$[RANDOM%900+100];
-thir=$[RANDOM%900+100];
-fou=$[RANDOM%900+100];
-fiv=$[RANDOM%900+100];
+first=$[RANDOM%900+100];
+second=$[RANDOM%900+100];
+third=$[RANDOM%900+100];
+four=$[RANDOM%900+100];
+five=$[RANDOM%900+100];
 if [ $fir -lt $sec ];
 then 
-max=$sec;
-min=$fir;
+max=$second;
+min=$first;
 else
-max=$fir;
-min=$sec;
+max=$first;
+min=$second;
 fi
-if [ $max -lt $thir ];
+if [ $max -lt $third ];
 then
-max=$thir;
-elif [ $max -lt $fou ];
+max=$third;
+elif [ $max -lt $four ];
 then
-max=$fou;
-elif [ $max -lt $fiv ];
+max=$four;
+elif [ $max -lt $five ];
 then
-max=$fiv;
+max=$five;
 else
 max=$max;
 fi
-if [ $min -gt $thir ];
+if [ $min -gt $third ];
 then
-min=$thir;
-elif [ $min -gt  $fou ];
-then min=$fou;
-elif [ $min -gt $fiv ];
-then min=$fiv;
+min=$third;
+elif [ $min -gt  $four ];
+then min=$four;
+elif [ $min -gt $five ];
+then min=$five;
 else 
 min=$min;
 fi
