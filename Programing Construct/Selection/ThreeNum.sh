@@ -2,8 +2,6 @@
 read -p "Enter 1st number: " num1;
 read -p "Enter 2nd number: " num2;
 read -p "Enter 3rd number: " num3;
-#d=$(echo "scale=2;$num2/$num3" | bc);
-#result3=$(echo "scale=2;$num1+$d" | bc);
 result1=$(( $num1 + $num2 * $num3 ));
 result2=$(( $num1 % $num2 + $num3 ));
 result3=$(( $num1 + $num2 / $num3 ));
