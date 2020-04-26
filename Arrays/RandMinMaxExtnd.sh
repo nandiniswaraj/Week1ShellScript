@@ -5,20 +5,20 @@ do
 done
 for (( i=0; i<9; i++ ))
 do
-     min=$i;
-     for (( j=$i+1; j<10; j++ ))
-     do
-        if (( ${arrRandomNum[min]} >= ${arrRandomNum[j]} ))
-        then
-               min=$j;
-        fi
-     done
-     if [ $min -ne $i ]
-     then
+         min=$i;
+for (( j=$i+1; j<10; j++ ))
+do
+if (( ${arrRandomNum[min]} >= ${arrRandomNum[j]} ))
+then
+          min=$j;
+fi
+done
+if [ $min -ne $i ]
+then
          temp=${arrRandomNum[min]};
          arrRandomNum[min]=${arrRandomNum[i]};
          arrRandomNum[i]=$temp;
-     fi
+fi
 done
-echo Second max = ${arrRandomNum[8]} and Second min = ${arrRandomNum[1]};
+      echo Second max = ${arrRandomNum[8]} and Second min = ${arrRandomNum[1]};
 
