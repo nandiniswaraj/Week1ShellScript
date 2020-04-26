@@ -4,7 +4,7 @@ second=$[RANDOM%900+100];
 third=$[RANDOM%900+100];
 four=$[RANDOM%900+100];
 five=$[RANDOM%900+100];
-if [ $fir -lt $sec ];
+if [ $first -lt $second ];
 then 
 max=$second;
 min=$first;
